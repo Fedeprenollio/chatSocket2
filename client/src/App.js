@@ -1,9 +1,8 @@
 import "./App.css";
 import io from "socket.io-client";
 import { useEffect, useState } from "react";
-import e from "cors";
 
-const sockt = io("http://localhost:4000");
+const sockt = io("/");
 
 function App() {
   const [message, setMessage] = useState();
